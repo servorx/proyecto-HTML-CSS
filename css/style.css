@@ -1,0 +1,120 @@
+/* Colores
+01
+#292526
+02
+#787676
+03
+#A3A1A2
+04
+#F2F2F2
+05
+#121111
+*/
+
+*{
+    background-color: #fff;
+    font-family: encode sans1;
+}
+@font-face{
+    font-family: encode sans1;
+    src: url(/storage/font/static/EncodeSans-Regular.ttf) format("truetype");
+    font-weight: 100;
+}
+button{
+    background: #292526;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    /* Corregir el nombre de la clase  */
+}
+
+
+
+.customer{
+    h1{
+        color: #787676;
+    }
+    p{
+
+    }
+    .profile-picture{
+
+    }
+}
+
+.search-bar{
+    .search{
+
+    }
+    .filter{
+
+    }
+}
+.filter{
+    background: #292526;
+    color: #fff;
+    padding: 12px ;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+}
+.category{
+    .all-items{
+
+    }
+    .dress{
+
+    }
+    .t-shirt{
+
+    }
+    .jeans{
+
+    }
+}
+.product1{
+    .imagen-producto{
+        .heart{
+
+        }
+        .image{
+            border-radius: 30px;
+        }
+    }
+}
+.product2{
+    .imagen-producto{
+        .heart{
+
+        }
+        .image{
+            border-radius: 30px;
+        }
+    }
+}
+
+.product3{
+    .imagen-producto{
+        .heart{
+
+        }
+        .image{
+            border-radius: 30px;
+        }
+    }
+}
+
+.product4{
+    .imagen-producto{
+        .heart{
+
+        }
+        .image{
+            border-radius: 30px;
+        }
+    }
+}

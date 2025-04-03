@@ -122,7 +122,3 @@ Se debe entregar un **enlace al repositorio privado en GitHub** que contenga el 
 - **Desarrollo en HTML y CSS nativo**, sin librerías externas.
 - **Propuestas de módulos desarrolladas previamente en Adobe XD o Figma** *(Si aplica).* 
 - **Sitio responsive (`@media query`)** con UI/UX basado en el wireframe del equipo de diseño.
-
----
-
-¡Buena suerte con el desarrollo del proyecto! 🚀
