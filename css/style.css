@@ -1,16 +1,17 @@
 /* Colores
-01
+01 gris oscruo
 #292526
-02
+02 beige todo raro
 #787676
-03
+03 como un gris pero m[as claro
 #A3A1A2
-04
+04 gris muy claro
 #F2F2F2
 05
 #121111
 */
 
+/* Todo esto son caracteristicas generales del archivo */
 *{
     background-color: #fff;
     font-family: encode sans1;
@@ -20,49 +21,132 @@
     src: url(/storage/font/static/EncodeSans-Regular.ttf) format("truetype");
     font-weight: 100;
 }
-button{
-    background: #292526;
-    color: #fff;
-    padding: 13px 30px;
-    border-radius: 100px;
-    border: none;
-    cursor: pointer;
-    width: fit-content;
-    
+@font-face{
+    font-family: encode sans8;
+    src: url(/storage/font/static/EncodeSans-Regular.ttf) format("truetype");
+    font-weight: 800;
 }
 /* Corregir el nombre de la clase y las caracteristicas */
 
 
+/* Todo esto corresponde al header del archivo */
 .customer{
-    h1{
-        color: #787676;
-    }
-    p{
-
-    }
-    .profile-picture{
-
-    }
+    position: relative;
+    padding: 0.3rem;
+}
+.customer h1 {
+    color: #787676;
+    font-size: 1rem;
+}
+.customer p {
+    font-weight: 900;
+    font-size: 1.2em;
+    margin: auto;
+}
+.profile-picture {
+    position: absolute;
+    top: 1.1rem; 
+    right: 0.5rem; 
+}
+.profile-picture img {
+    width: 3.5rem; 
+    border-radius: 100%;
+    border: none; 
 }
 
-.search-bar{
-    .search{
-
-    }
-    .filter{
-
-    }
+/* Todo esto corresponde a la barra de busqueda  */
+/*  */
+:root {
+    /* estas son vairalbes globales de css, es decir, modifican todo el documento */
+    --input-bg: white;
+    --item-hover: #f6f0f0;
 }
-.filter{
-    background: #292526;
-    color: #fff;
-    padding: 12px ;
-    border-radius: 10px;
-    border: none;
+
+/* este codigo me arruina todo el body JAJAJA */
+/* body {
+    display: flex;
+    padding-top: 4rem;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+} */
+
+.search-box {
+    /* caracteristicas de la barra de busqueda */
+    margin-top: 0.8rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #DFDEDF;
+    padding: 1rem;
+    max-width: fit-content;
+    width: 80%;
+}
+
+.row {
+    /* alinea los elementos en una fila y alinea verticalmente en el centro los resultados relacionado con la busqueda */
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.row input {
+    /* estilo para el campo de entrada */
+    flex: 1;
+    max-height: 2.5rem;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+}
+
+.row button {
+    /* estilos para el boton */
+    background: transparent;
+    padding: 0;
     cursor: pointer;
     width: fit-content;
 }
-.category{
+
+.results {
+    /* estilos para los resultados que se seleccionan */
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.results ul {
+    /* estilo para la lista de resultados */
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.25rem;
+}
+
+.results ul li{
+    list-style: none;
+    border-radius: 0.25rem;
+    padding: 1rem 0.75rem;
+}
+
+.results ul li:hover{
+    background: var(--item-hover);
+    border-radius: 0.5rem;
+}
+
+/*  */
+.filter img{
+    /* ajustar el dise;o de la imagen */
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* 
+/
+/
+/* /*  */
+/* Categorias */
+/* .category{
     .all-items{
 
     }
@@ -75,9 +159,83 @@ button{
     .jeans{
 
     }
+} */
+button{
+    background: #292526;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+} 
+.category {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+/* Estilos base para todos los botones */
+.category button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #ffffff;
+    color: #292526;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+/* Estilos para las imágenes dentro de los botones */
+.category button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Estilos para el texto dentro de los botones */
+.category button p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Estilo específico para el botón "All Items" (activo) */
+.category .all-items button {
+    background: #292526;
+    border: none;
+    p{
+        background-color: #292526;
+        color: #fff;
+    }
+    img{
+        background-color: transparent;
+    }
+}
+
+/* Efectos hover para los botones */
+.category .dress button:hover,
+.category .t-shirt button:hover,
+.category .jeans button:hover {
+    background: #f5f5f5;
+}
+
+.category .all-items button:hover {
+    background: #3a3536;
+    p{
+        background-color: #3a3536;
+        color: #fff;
+    }
+}
+
+/* Listado de prodcutos */
 .product1{
-    .imagen-producto{
+    .imagen-product{
         .heart{
 
         }
@@ -87,7 +245,7 @@ button{
     }
 }
 .product2{
-    .imagen-producto{
+    .imagen-product{
         .heart{
 
         }
@@ -98,7 +256,7 @@ button{
 }
 
 .product3{
-    .imagen-producto{
+    .imagen-product{
         .heart{
 
         }
@@ -109,7 +267,7 @@ button{
 }
 
 .product4{
-    .imagen-producto{
+    .imagen-product{
         .heart{
 
         }

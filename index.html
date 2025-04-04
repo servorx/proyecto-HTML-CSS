@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,27 +10,35 @@
 <body>
     <header>
         <div class="customer">
-            <h1>hello, WELCOME</h1>
-            <p>albert nombre o l que sea</p>
+            <h1>Hello, Welcome :)</h1>
+            <p>Albert Stevano</p>
             <div class="profile-picture">
-                <a href="views/detail.html"><img src="/storage/img/index/icon-account-picture.png" alt="icon account picture" >
-                </a>
-                <!-- Tener cuidadop con esta parte de links -->
+                <img src="/storage/img/index/icon-account-picture.png" alt="icon account picture" >
             </div>
         </div>
     </header>
     <nav>
-        <div class="search-bar">
-            <div class="search">
-                <form action="">
-                    <img src="/storage/img/index/icon-search.png" alt="icon search">
-                    <p>search clothes...</p>   
-                </form>
+        <div class="search-box">
+            <div class="row">
+                <input 
+                    type="text" 
+                    class="search-bar" 
+                    placeholder="Search clothes..."
+                    autocomplete="off">
+                <button>
+                    <a href="https://google.com" target="_blank">
+                        <img src="storage/img/index/icon-search.png" alt="icon search">
+                    </a>
+                </button>
             </div>
-            <div class="filter">
-                <img src="/storage/img/index/icon-filter.png" alt="icon filter">
-            </div>
+            <div class="results"></div>
         </div>
+        <div class="filter">
+            <a href="https://google.com" target="_blank">
+                <img src="/storage/img/index/icon-filter.png" alt="icon filter">
+            </a>
+            <!-- corregir que esta imagen salga al lado del motro de busqueda -->
+        </div> 
         <div class="category">
             <div class="all-items">
                 <button>
@@ -52,14 +61,14 @@
             <div class="jeans">
                 <button>
                     <img src="storage/img/index/icon-jeans.png" alt="icon items">
-                    <p>jeans</p>
+                    <p>Jeans</p>
                 </button>
             </div>
         </div>
     </nav>
     <main>
         <article class="product1">
-            <figure class="imagen-producto">
+            <figure class="imagen-product">
                 <img src="storage/img/index/icon-heart-empty.png" alt="corazon vacio" class="heart"> 
                 <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
                 <!-- arreglar las clases para poder colocar el corazon y la imagen juntas -->
@@ -73,7 +82,7 @@
             </div>
         </article>
         <article class="product2">
-            <figure class="imagen-producto">
+            <figure class="imagen-product">
                 <img src="storage/img/index/icon-heart-fully.png" alt="corazon lleno" class="heart"> 
                 <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
                 <!-- arreglar las clases para poder colocar el corazon y la imagen juntas -->
@@ -87,7 +96,7 @@
             </div>
         </article>
         <article class="product3">
-            <figure class="imagen-producto">
+            <figure class="imagen-product">
                 <img src="storage/img/index/icon-heart-empty.png" alt="corazon vacio" class="heart"> 
                 <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
                 <!-- arreglar las clases para poder colocar el corazon y la imagen juntas -->
@@ -101,7 +110,7 @@
             </div>
         </article>
         <article class="product4">
-            <figure class="imagen-producto">
+            <figure class="imagen-product">
                 <img src="storage/img/index/icon-heart-empty.png" alt="corazon vacio" class="heart"> 
                 <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
                 <!-- arreglar las clases para poder colocar el corazon y la imagen juntas -->
