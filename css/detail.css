@@ -1,0 +1,109 @@
+/* Colores
+01
+#292526
+02
+#787676
+03
+#A3A1A2
+04
+#F2F2F2
+05
+#121111
+*/
+*{
+    background-color: #fff;
+    font-family: encode sans1;
+}
+@font-face{
+    font-family: encode sans1;
+    src: url(/storage/font/static/EncodeSans-Regular.ttf) format("truetype");
+    font-weight: 100;
+}
+button{
+    background: #292526;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+}
+/* Corregir el nombre de la clase y las caracteristicas */
+
+.image-preview{
+    .heart{
+
+    }
+    .back{
+
+    }
+}
+.detail{
+
+}
+
+
+
+
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    padding: 20px;
+    max-width: 300px;
+}
+.description {
+    font-size: 14px;
+    color: #555;
+}
+.bold{
+    font-weight: bold;
+}
+.options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    
+}
+.size, .color {
+    display: flex;
+    gap: 5px;
+}
+.size span, .color div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.size .selected{
+    border: 2px solid #000;
+    background: #000;  
+    color: #fff;
+    font-weight: bold;
+}
+.color .selected {
+    border: 2px solid #000;
+    background-color: currentColor;
+}
+.color div {
+    border: none;
+}
+.color div:nth-child(1){ 
+    background: #787876; 
+}
+.color div:nth-child(2){ 
+    background: #433F40; 
+}
+.color div:nth-child(3){ 
+    background: #121111; 
+}
+button{
+    color: #111;
+}
