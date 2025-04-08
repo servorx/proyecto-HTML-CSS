@@ -1,4 +1,4 @@
-# Diseño de App de Ecommerce de Ropa - Fase 1
+# Diseño de App de Ecommerce de Ropa
 
 ## Descripción del Proyecto
 

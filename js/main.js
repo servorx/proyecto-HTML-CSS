@@ -68,7 +68,7 @@ const clotheList = [
 // esta es la lista que se expresa para la barra de busqueda creando un array
 
 
-// Se obtienen referencias de resultado y la barra de busqueda
+// se obtienen referencias de resultado y la barra de busqueda a traves del query(no se que es eso)
 const resultBox = document.querySelector(".results");
 const inputBox = document.querySelector(".search-bar");
 

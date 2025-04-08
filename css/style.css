@@ -29,7 +29,7 @@
 /* Corregir el nombre de la clase y las caracteristicas */
 
 
-/* Todo esto corresponde al header del archivo */
+/* Todo esto corresponde al header del archivo del perfil */
 .customer{
     position: relative;
     padding: 0.3rem;
@@ -135,77 +135,60 @@
 /*  */
 .filter img{
     /* ajustar el dise;o de la imagen */
-    border-radius: 10px;
+    border-radius: 0.5rem;
     border: none;
     cursor: pointer;
     margin-top: 1rem;
 }
 
-/* 
-/
-/
-/* /*  */
-/* Categorias */
-/* .category{
-    .all-items{
-
-    }
-    .dress{
-
-    }
-    .t-shirt{
-
-    }
-    .jeans{
-
-    }
-} */
+/* estilos generales de los botones seleccionados */
 button{
     background: #292526;
     color: #fff;
-    padding: 13px 30px;
-    border-radius: 100px;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
     border: none;
     cursor: pointer;
     width: fit-content;
 } 
+
 .category {
     display: flex;
-    gap: 10px;
+    gap: 0.7rem;
     align-items: center;
     flex-wrap: wrap;
+    /* esto hace que los items se puedan acomodar por s[i solos, si esto fuera nowrap, se saldr[ian pero no quiero colocar una barra de nevegaci[on para ello */
 }
 
-/* Estilos base para todos los botones */
 .category button {
+    /* Estilos base para los botrones decategorias*/
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 0.5px;
     background: #ffffff;
     color: #292526;
-    padding: 10px 20px;
-    border-radius: 100px;
-    border: 1px solid #e5e5e5;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10rem;
+    border: 0.1rem solid #e5e5e5;
     cursor: pointer;
     width: fit-content;
     transition: all 0.3s ease;
+    /* aplica transici[on al cargar la pagina  */
 }
 
-/* Estilos para las imágenes dentro de los botones */
 .category button img {
-    width: 20px;
-    height: 20px;
+    /* Estilos para las imágenes dentro de los botones, o bueno "logos" */
+    width: 1.3rem;
+    height: 1.3rem;
     object-fit: contain;
 }
 
-/* Estilos para el texto dentro de los botones */
 .category button p {
     margin: 0;
-    font-weight: 500;
+    font-weight: 500;/* Estilos para el texto dentro de los botones */
 }
 
-/* Estilo específico para el botón "All Items" (activo) */
 .category .all-items button {
     background: #292526;
     border: none;
@@ -216,16 +199,16 @@ button{
     img{
         background-color: transparent;
     }
+    /* Estilo específico para el botón "All Items" (activo) */
 }
 
-/* Efectos hover para los botones */
-.category .dress button:hover,
-.category .t-shirt button:hover,
-.category .jeans button:hover {
+.category .dress button:hover, .category .t-shirt button:hover, .category .jeans button:hover {
     background: #f5f5f5;
+    /* Efectos hover para los botones */
 }
 
 .category .all-items button:hover {
+    /* mas efectos para la seleccion seleccionada aunque no esta terminada */
     background: #3a3536;
     p{
         background-color: #3a3536;
@@ -234,45 +217,266 @@ button{
 }
 
 /* Listado de prodcutos */
-.product1{
-    .imagen-product{
-        .heart{
-
-        }
-        .image{
-            border-radius: 30px;
-        }
-    }
-}
-.product2{
-    .imagen-product{
-        .heart{
-
-        }
-        .image{
-            border-radius: 30px;
-        }
-    }
+main {
+    /* diseño general y estructura del main */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1.5rem;
 }
 
-.product3{
-    .imagen-product{
-        .heart{
-
-        }
-        .image{
-            border-radius: 30px;
-        }
-    }
+.product{
+    border-radius: 1rem;
+    overflow: hidden;
+    /* el overflow hidden hace que todo texto que se salga del contenedor, no se muestre */
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    /* hace que la sombra se vea diferente de acuerdo a la esquina */
 }
 
-.product4{
-    .imagen-product{
-        .heart{
+.imagen-product {
+    /* Contenedor de las imagenes */
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* si se quita el margin y el pading, la imagen queda sin las proporciones adecuadas */
+    width: 100%;
+    /* ocupa todo el contenedor */
+    height: fit-content;
+    overflow: hidden;
+}
 
-        }
-        .image{
-            border-radius: 30px;
-        }
+.imagen-product .image {
+    /* caracteristicas que se le dan a las imagenes de los productos*/
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0; /* Redondear solo las esquinas superiores de la imagne */
+    display: block;
+}
+
+/* el circulo que se usa para el coraz[on*/
+.imagen-product .heart {
+    position: absolute;
+    top: 0.62rem;
+    right: 0.62rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.37rem;
+    background-color: #292526;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* sombras esteticas para el coraz[on */
+    cursor: pointer;
+    transition: transform 0.2s;
+    
+}
+
+.imagen-product .heart:hover {
+    transform: scale(1.1);
+    /* aumentar escala del corazon cuando se pone el cursor sobre el */
+}
+
+
+
+/* Espacio del contenido de cada producto*/
+.product1 div, .product2 div, .product3 div {
+    padding: 15px;
+}
+
+/* titulo  de cada producto */
+.product1 h2, .product2 h2, .product3 h2 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Texto del producto */
+.product1 p, .product2 p, .product3 p {
+    margin: 5px 0;
+    color: gray;
+    font-size: 14px;
+}
+
+/* Precio del producto, en este caso, se usa el tercer parrafo, osea, los numeros */
+.product1 p:nth-child(3), .product2 p:nth-child(3), .product3 p:nth-child(3) {
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+/* ultimo parrafo para la calificacion de las estrellas */
+.product1 p:last-child, .product2 p:last-child, .product3 p:last-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: black;
+}
+
+/* Imagen dentro del último párrafo  */
+.product1 p:last-child img, .product2 p:last-child img, .product3 p:last-child img {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+/* Estilos para el footer y la barra de navegaci[on */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 0 16px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292526;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+}
+
+/* indicador para la notificacion del carro */
+.notification {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #FF3B30;
+    border-radius: 50%;
+    background-image: url(/storage/img/index/icon-cart.png);
+}
+
+/* resolucion para ordenadores */
+@media screen and (min-width: 992px) {
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        background-color: transparent;
+        z-index: 1000;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #292526;
+        border-radius: 50px;
+        padding: 0.8rem 2.5rem;
+        width: 100%;
+        max-width: 600px; 
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+    
+    .item {
+        background: transparent;
+        border: none;
+        padding: 10px 15px; 
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.2s ease;
+    }
+    
+    .item:hover {
+        transform: translateY(-3px);
+    }
+    
+    .item img {
+        width: 1.8rem; 
+        height: 1.8rem;
+        background: none;
+    }
+    
+    .notification {
+        position: absolute;
+        top: -2px;
+        right: 5px;
+        width: 0.7rem;
+        height: 0.7rem;
+        background-color: #FF3B30;
+        border-radius: 50%;
+        background-image: url(/storage/img/index/icon-cart.png);
+    }
+    
+    body {
+        padding-bottom: 100px;
+    }
+    main {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 2.5rem;
+        padding: 2rem 4rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .product {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .product:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .category {
+        justify-content: center;
+        margin: 2rem 0;
+        gap: 1.5rem;
+    }
+    
+    .category button {
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .search-box {
+        margin: 1.5rem auto;
+        width: 50%;
+        max-width: 600px;
     }
 }

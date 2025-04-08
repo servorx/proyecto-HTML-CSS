@@ -65,9 +65,10 @@
                 </button>
             </div>
         </div>
+        <!-- me falta hacer que cuando el usuario le de click, se cambie el fondo y el icono  -->
     </nav>
     <main>
-        <article class="product1">
+        <article class="product">
             <figure class="imagen-product">
                 <img src="storage/img/index/icon-heart-empty.png" alt="corazon vacio" class="heart"> 
                 <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
@@ -81,12 +82,12 @@
                 <p><img src="storage/img/index/icon-star.png" alt="star">5.0</p>
             </div>
         </article>
-        <article class="product2">
+        <article class="product">
             <figure class="imagen-product">
                 <img src="storage/img/index/icon-heart-fully.png" alt="corazon lleno" class="heart"> 
                 <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
                 <!-- arreglar las clases para poder colocar el corazon y la imagen juntas -->
-                <img src="storage/img/index/product2.png" alt="producto 2" class="image">
+                <a href="./views/detail.html" target="_blank"><img src="storage/img/index/product2.png" alt="producto 2" class="image"></a>
             </figure>
             <div>
                 <h2>Light Dress Bless</h2>
@@ -95,7 +96,7 @@
                 <p><img src="storage/img/index/icon-star.png" alt="star">5.0</p>
             </div>
         </article>
-        <article class="product3">
+        <article class="product">
             <figure class="imagen-product">
                 <img src="storage/img/index/icon-heart-empty.png" alt="corazon vacio" class="heart"> 
                 <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
@@ -109,7 +110,7 @@
                 <p><img src="storage/img/index/icon-star.png" alt="star">4.5</p>
             </div>
         </article>
-        <article class="product4">
+        <article class="product">
             <figure class="imagen-product">
                 <img src="storage/img/index/icon-heart-empty.png" alt="corazon vacio" class="heart"> 
                 <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
@@ -125,13 +126,22 @@
         </article>
     </main>
     <footer>
-        <div class="bottom-navigation">
-            <button>
-                <img src="/storage/img/index/icon-home.png" alt="home icon">
-                <img src="/storage/img/index/icon-cart.png" alt="cart icon">
-                <img src="/storage/img/index/icon-favourite.png" alt="favorite-icon">
-                <img src="/storage/img/index/icon-home.png" alt="home-icon">
-            </button>
+        <div class="footer-container">
+            <nav class="bottom">
+                <button class="item">
+                    <img src="/storage/img/index/icon-home.png" alt="home icon">
+                </button>
+                <button class="item">
+                    <a href="./views/checkout.html" target="_blank"><img src="/storage/img/index/icon-cart.png" alt="cart icon"></a>
+                    <span class="notification"></span>
+                </button>
+                <button class="item">
+                    <img src="/storage/img/index/icon-favourite.png" alt="favorite-icon">
+                </button>
+                <button class="item">
+                    <img src="/storage/img/index/icon-home.png" alt="profile-icon">
+                </button>
+            </nav>
         </div>
     </footer>
     <script src="/js/main.js"></script>
