@@ -214,3 +214,76 @@ class ProductDetail extends HTMLElement {
 }
 
 customElements.define('product-detail', ProductDetail);
+
+/*
+button{
+    background: #292526;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    padding: 20px;
+    max-width: 300px;
+}
+.description {
+    font-size: 14px;
+    color: #555;
+}
+.bold{
+    font-weight: bold;
+}
+.options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    
+}
+.size, .color {
+    display: flex;
+    gap: 5px;
+}
+.size span, .color div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.size .selected{
+    border: 2px solid #000;
+    background: #000;  
+    color: #fff;
+    font-weight: bold;
+}
+.color .selected {
+    border: 2px solid #000;
+    background-color: currentColor;
+}
+.color div {
+    border: none;
+}
+.color div:nth-child(1){ 
+    background: #787876; 
+}
+.color div:nth-child(2){ 
+    background: #433F40; 
+}
+.color div:nth-child(3){ 
+    background: #121111; 
+}
+button{
+    color: #111;
+} */

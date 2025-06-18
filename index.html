@@ -11,71 +11,73 @@
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <!-- importacion de scripts -->
   <script src="./js/main.js"></script>
-  <script src="/js/product-detail.js" type="module"></script>
+  <script src="./js/checkout.js"></script>
+  <script src="./js/detail.js"></script>
+  <script src="./js/search_bar.js"></script>
   <title>Pagina principal</title>
 </head>
 <body>
   <header class="header-profile">
     <div class="customer">
       <div class="customer-text">
-        <h1>Hello, Welcome :)</h1>
+        <h1>Hello, Welcome 👋</h1>
         <p>Albert Stevano</p>
       </div>
       <div class="profile-picture">
-        <img src="/assets/img/index/" alt="Profile picture of Albert Stevano">
+        <img src="/assets/profile.svg" alt="Profile picture of Albert Stevano">
       </div>
     </div>
   </header>
-    <nav>
-        <div class="search-box">
-            <div class="row">
-                <input 
-                    type="text" 
-                    class="search-bar" 
-                    placeholder="Search clothes..."
-                    autocomplete="off">
-                <button>
-                    <a href="https://google.com" target="_blank">
-                        <img src="storage/img/index/icon-search.png" alt="icon search">
-                    </a>
-                </button>
-            </div>
-            <div class="results"></div>
-        </div>
-        <div class="filter">
-            <a href="https://google.com" target="_blank">
-                <img src="/storage/img/index/icon-filter.png" alt="icon filter">
-            </a>
-            <!-- corregir que esta imagen salga al lado del motro de busqueda -->
-        </div> 
-        <div class="category">
-            <div class="all-items">
-                <button>
-                    <img src="storage/img/index/icon-items.png" alt="icon items">
-                    <p>All items</p>
-                </button>
-            </div>
-            <div class="dress">
-                <button>
-                    <img src="storage/img/index/icon-dress.png" alt="icon items">
-                    <p>Dress</p>
-                </button>
-            </div>
-            <div class="t-shirt">
-                <button>
-                    <img src="storage/img/index/icon-t_shirt.png" alt="icon items">
-                    <p>T-shirt</p>
-                </button>
-            </div>
-            <div class="jeans">
-                <button>
-                    <img src="storage/img/index/icon-jeans.png" alt="icon items">
-                    <p>Jeans</p>
-                </button>
-            </div>
-        </div>
-        <!-- me falta hacer que cuando el usuario le de click, se cambie el fondo y el icono  -->
-    </nav>
+  <nav>
+    <div class="search-box">
+      <div class="row">
+        <input 
+          type="text" 
+          class="search-bar" 
+          placeholder="Search clothes..."
+          autocomplete="off">
+        <button>
+          <a href="https://google.com" target="_blank">
+            <img src="storage/img/index/icon-search.png" alt="icon search">
+          </a>
+        </button>
+      </div>
+      <div class="results"></div>
+    </div>
+    <div class="filter">
+      <a href="https://google.com" target="_blank">
+        <img src="/storage/img/index/icon-filter.png" alt="icon filter">
+      </a>
+      <!-- corregir que esta imagen salga al lado del motro de busqueda -->
+    </div> 
+    <div class="category">
+      <div class="all-items">
+        <button>
+          <img src="storage/img/index/icon-items.png" alt="icon items">
+          <p>All items</p>
+        </button>
+      </div>
+      <div class="dress">
+        <button>
+          <img src="storage/img/index/icon-dress.png" alt="icon items">
+          <p>Dress</p>
+        </button>
+      </div>
+      <div class="t-shirt">
+        <button>
+          <img src="storage/img/index/icon-t_shirt.png" alt="icon items">
+          <p>T-shirt</p>
+        </button>
+      </div>
+      <div class="jeans">
+        <button>
+          <img src="storage/img/index/icon-jeans.png" alt="icon items">
+          <p>Jeans</p>
+        </button>
+      </div>
+    </div>
+    <!-- me falta hacer que cuando el usuario le de click, se cambie el fondo y el icono  -->
+  </nav>
     <main>
         <article class="product">
             <figure class="imagen-product">
@@ -153,7 +155,6 @@
             </nav>
         </div>
     </footer>
-    <script src="/js/main.js"></script>
-      <product-detail></product-detail>
+  <product-detail></product-detail>
 </body>
 </html>
