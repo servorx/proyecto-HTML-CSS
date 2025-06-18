@@ -2,21 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Pagina principal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- importacion de estilos y fuentes -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- importacion de scripts -->
+  <script src="./js/main.js"></script>
+  <script src="/js/product-detail.js" type="module"></script>
+  <title>Pagina principal</title>
 </head>
 <body>
-    <header>
-        <div class="customer">
-            <h1>Hello, Welcome :)</h1>
-            <p>Albert Stevano</p>
-            <div class="profile-picture">
-                <img src="/storage/img/index/icon-account-picture.png" alt="icon account picture" >
-            </div>
-        </div>
-    </header>
+  <header class="header-profile">
+    <div class="customer">
+      <div class="customer-text">
+        <h1>Hello, Welcome :)</h1>
+        <p>Albert Stevano</p>
+      </div>
+      <div class="profile-picture">
+        <img src="/assets/img/index/" alt="Profile picture of Albert Stevano">
+      </div>
+    </div>
+  </header>
     <nav>
         <div class="search-box">
             <div class="row">
@@ -145,5 +154,6 @@
         </div>
     </footer>
     <script src="/js/main.js"></script>
+      <product-detail></product-detail>
 </body>
 </html>
