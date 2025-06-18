@@ -29,27 +29,25 @@
     </div>
   </header>
   <nav>
-    <div class="search-box">
-      <div class="row">
-        <input 
-          type="text" 
-          class="search-bar" 
-          placeholder="Search clothes..."
-          autocomplete="off">
-        <button>
-          <a href="https://google.com" target="_blank">
-            <img src="storage/img/index/icon-search.png" alt="icon search">
-          </a>
-        </button>
+    <div class="search-container">
+      <div class="search-box">
+        <div class="row">
+          <img src="assets/icon-search.svg" alt="icon search" class="search-icon" />
+          <input 
+            type="text" 
+            class="search-bar" 
+            placeholder="Search clothes. . ."
+            autocomplete="off">
+        </div>
+        <div class="results"></div>
       </div>
-      <div class="results"></div>
+      <div class="filter">
+        <a href="https://google.com" target="_blank">
+          <img src="assets/icon-filter.svg" alt="icon filter">
+        </a>
+      </div>
     </div>
-    <div class="filter">
-      <a href="https://google.com" target="_blank">
-        <img src="/storage/img/index/icon-filter.png" alt="icon filter">
-      </a>
-      <!-- corregir que esta imagen salga al lado del motro de busqueda -->
-    </div> 
+  </nav>
     <div class="category">
       <div class="all-items">
         <button>
@@ -77,7 +75,6 @@
       </div>
     </div>
     <!-- me falta hacer que cuando el usuario le de click, se cambie el fondo y el icono  -->
-  </nav>
     <main>
         <article class="product">
             <figure class="imagen-product">
