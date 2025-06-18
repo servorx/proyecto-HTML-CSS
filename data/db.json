@@ -1,34 +1,40 @@
 {
-  "main":[
+  "main": [
     {
-      "main-card-1":{
-        "imagen": "./assets/product-1",
-        "title": "Modern Light Clothes",
-        "category" : "T-Shirt",
-        "price": "$212.99",
-        "rating": "5.0" 
-      },
-      "main-card-2":{
-        "imagen": "./assets/product-2",
-        "title": "Light Dress Bless",
-        "category" : "Dress modern",
-        "price": "$162.99",
-        "rating": "5.0" 
-      },
-      "main-card-3":{
-        "imagen": "./assets/product-3",
-        "title": "Midnight Edge Faux Leather Jacket",
-        "category" : "Jacket",
-        "price": "$199.99",
-        "rating": "4.8"
-      },
-      "main-card-4":{
-        "imagen": "./assets/product-4",
-        "title": "Golden Glow Wrap Dress",
-        "category" : "Dress",
-        "price": "$249.99",
-        "rating": "4.7"
-      }
+      "id": 1,
+      "imagen": "./assets/product-1.png",
+      "title": "Modern Light Clothes",
+      "category": "T-Shirt",
+      "price": "$212.99",
+      "rating": "5.0",
+      "favorite": false
+    },
+    {
+      "id": 2,
+      "imagen": "./assets/product-2.png",
+      "title": "Light Dress Bless",
+      "category": "Dress modern",
+      "price": "$162.99",
+      "rating": "5.0",
+      "favorite": true
+    },
+    {
+      "id": 3,
+      "imagen": "./assets/product-3.png",
+      "title": "Midnight Edge Faux Leather Jacket",
+      "category": "Jacket",
+      "price": "$199.99",
+      "rating": "4.8",
+      "favorite": false
+    },
+    {
+      "id": 4,
+      "imagen": "./assets/product-4.png",
+      "title": "Golden Glow Wrap Dress",
+      "category": "Dress",
+      "price": "$249.99",
+      "rating": "4.7",
+      "favorite": false
     }
   ],
   "detail":[

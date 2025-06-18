@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <!-- importacion de scripts -->
-  <script src="./js/main.js"></script>
+  <script src="./js/home.js"></script>
   <script src="./js/checkout.js"></script>
   <script src="./js/detail.js"></script>
   <script src="./js/search_bar.js"></script>
@@ -75,65 +75,8 @@
       </button>
     </div>
   </nav>
-    <!-- TODO: me falta hacer que cuando el usuario le de click, se cambie el fondo y el icono  -->
-    <main>
-        <article class="product">
-            <figure class="imagen-product">
-                <img src="storage/img/index/icon-heart-empty.png" alt="corazon vacio" class="heart"> 
-                <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
-                <!-- arreglar las clases para poder colocar el corazon y la imagen juntas -->
-                <img src="storage/img/index/product1.png" alt="producto 1" class="image">
-            </figure>
-            <div>
-                <h2>Modern light Clothes</h2>
-                <p>T-shirt</p>
-                <p>$212.99</p>
-                <p><img src="storage/img/index/icon-star.png" alt="star">5.0</p>
-            </div>
-        </article>
-        <article class="product">
-            <figure class="imagen-product">
-                <img src="storage/img/index/icon-heart-fully.png" alt="corazon lleno" class="heart"> 
-                <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
-                <!-- arreglar las clases para poder colocar el corazon y la imagen juntas -->
-                <a href="./views/detail.html" target="_blank"><img src="storage/img/index/product2.png" alt="producto 2" class="image"></a>
-            </figure>
-            <div>
-                <h2>Light Dress Bless</h2>
-                <p>Dress modern</p>
-                <p>$162.99</p>
-                <p><img src="storage/img/index/icon-star.png" alt="star">5.0</p>
-            </div>
-        </article>
-        <article class="product">
-            <figure class="imagen-product">
-                <img src="storage/img/index/icon-heart-empty.png" alt="corazon vacio" class="heart"> 
-                <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
-                <!-- arreglar las clases para poder colocar el corazon y la imagen juntas -->
-                <img src="storage/img/index/product3.png" alt="producto 3" class="image">
-            </figure>
-            <div>
-                <h2>Midnight Edge Faux Leather Jacket</h2>
-                <p>Jacket</p>
-                <p>$199.99</p>
-                <p><img src="storage/img/index/icon-star.png" alt="star">4.5</p>
-            </div>
-        </article>
-        <article class="product">
-            <figure class="imagen-product">
-                <img src="storage/img/index/icon-heart-empty.png" alt="corazon vacio" class="heart"> 
-                <!-- para el coraz[on se tiene que crear un circulo en el que vaya la imagen adentro -->
-                <!-- arreglar las clases para poder colocar el corazon y la imagen juntas -->
-                <img src="storage/img/index/product4.png" alt="producto 4" class="image">
-            </figure>
-            <div>
-                <h2>Golden Glow Wrap Dress</h2>
-                <p>Dress</p>
-                <p>$249.99</p>
-                <p><img src="storage/img/index/icon-star.png" alt="star">4.8</p>
-            </div>
-        </article>
-    </main>
+  <!-- TODO: me falta hacer que cuando el usuario le de click, se cambie el fondo y el icono  -->
+  <main id="product-list" class="product-list"></main>
   <footer>
     <div class="footer-container">
       <nav class="bottom">
@@ -153,6 +96,6 @@
       </nav>
     </div>
   </footer>
-  <product-detail></product-detail>
+  <!-- <product-detail></product-detail> -->
 </body>
 </html>
