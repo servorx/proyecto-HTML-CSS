@@ -124,8 +124,8 @@ nav {
 /* filtro del search box */
 .filter img {
   background-color: #1e1e1e;
-  padding: 0.8rem;
-  border-radius: 0.75rem;
+  padding: 1rem;
+  border-radius: 10px;
   width: 3.5rem;
   height: 3.5rem;
   object-fit: contain;

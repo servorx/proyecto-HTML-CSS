@@ -2,23 +2,103 @@
   "main":[
     {
       "main-card-1":{
-        "imagen": "./assets/product-1."
+        "imagen": "./assets/product-1",
+        "title": "Modern Light Clothes",
+        "category" : "T-Shirt",
+        "price": "$212.99",
+        "rating": "5.0" 
       },
       "main-card-2":{
-
+        "imagen": "./assets/product-2",
+        "title": "Light Dress Bless",
+        "category" : "Dress modern",
+        "price": "$162.99",
+        "rating": "5.0" 
       },
       "main-card-3":{
-
+        "imagen": "./assets/product-3",
+        "title": "Midnight Edge Faux Leather Jacket",
+        "category" : "Jacket",
+        "price": "$199.99",
+        "rating": "4.8"
       },
       "main-card-4":{
-
+        "imagen": "./assets/product-4",
+        "title": "Golden Glow Wrap Dress",
+        "category" : "Dress",
+        "price": "$249.99",
+        "rating": "4.7"
       }
     }
   ],
   "detail":[
-
+    {
+      "detail-card-1":{
+        "imagen": "./assets/product-1.png",
+        "title": "Modern Light Clothes",
+        "rating": "5.0",
+        "reviews": "7.932 reviews",
+        "description" : "Its simple and elegant shape makes it perfect for those of you who want minimalist clothes. Read More...",
+        "price": "$212.99"
+      },
+      "main-card-2":{
+        "imagen": "./assets/product-2.png",
+        "title": "Light Dress Bless",
+        "rating": "5.0",
+        "reviews": "12.842 reviews",
+        "description" : "Flowy, fresh and flattering — this dress is a dream for those who embrace comfort with style. Read More...",
+        "price": "$162.99"
+      },
+      "main-card-3":{
+        "imagen": "./assets/product-3.png",
+        "title": "Midnight Edge Faux Leather Jacket",
+        "rating": "4.8",
+        "reviews": "17.142 reviews",
+        "description" : "Add a bold touch to your wardrobe with this sleek faux leather jacket made for modern rebels. Read More...",
+        "price": "$199.99"
+      },
+      "main-card-4":{
+        "imagen": "./assets/product-4.png",
+        "title": "Golden Glow Wrap Dress",
+        "rating": "4.7",
+        "reviews": "5.121 reviews",
+        "description" : "Shimmer with elegance in every step — this wrap dress captures the essence of timeless glamour. Read More...",
+        "price": "$249.99"
+      }
+    }
   ],
-  "checkout":[
-
-  ]
+  "checkout": {
+    "cartItems": [
+      {
+        "id": 1,
+        "productId": 101,
+        "title": "Modern light clothes",
+        "category": "Dress modern",
+        "image": "./assets/product-1.png",
+        "price": 212.99,
+        "quantity": 4
+      },
+      {
+        "id": 2,
+        "productId": 102,
+        "title": "Modern light clothes",
+        "category": "Dress modern",
+        "image": "./assets/product-2.png",
+        "price": 162.99,
+        "quantity": 1
+      }
+    ],
+    "paymentMethod": {
+      "type": "VISA",
+      "maskedNumber": "**** **** **** 2143",
+      "selected": true
+    },
+    "summary": {
+      "totalItems": 9,
+      "totalAmount": 1014.95,
+      "shippingFee": 0.0,
+      "discount": 0.0,
+      "subTotal": 1014.95
+    }
+  }
 }
