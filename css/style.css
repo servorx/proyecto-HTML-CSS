@@ -20,39 +20,6 @@
   /* background-color: #fff; */
 }
 
-/* HEADER */
-.header-profile {
-  padding: 1rem;
-}
-
-.customer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  position: relative;
-}
-
-.customer-text h1 {
-  color: var(--color-beige-raro);
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.customer-text p {
-  font-weight: bolder;
-  font-size: larger;
-  color: var(--color-negro-profundo);
-}
-
-.profile-picture img {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--color-borde);
-}
-
 /* esta parte corresponde a la barra de navegacion */
 nav {
   padding: 1rem;

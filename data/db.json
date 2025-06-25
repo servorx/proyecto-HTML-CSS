@@ -1,4 +1,8 @@
 {
+  "header_element":{
+    "name": "Angel Pinzon",
+    "profile": "./assets/profile.svg"
+  },
   "main": [
     {
       "id": 1,
