@@ -1,8 +1,14 @@
 {
-  "header_element":{
-    "name": "Angel Pinzon",
-    "profile": "./assets/profile.svg"
-  },
+  "header_element": [
+    {
+      "user": [
+        {
+          "name": "Angel Pinzon",
+          "image": "/assets/profile.svg"
+        }
+      ]
+    }
+  ],
   "main": [
     {
       "id": 1,

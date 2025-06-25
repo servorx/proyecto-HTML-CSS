@@ -1,7 +1,7 @@
-class header_element extends HTMLElement {
+class HeaderElement extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({mode: 'open'});
+    this.attachShadow({ mode: 'open' });
 
     const header_template = /*HTML*/`
       <style>
@@ -37,43 +37,48 @@ class header_element extends HTMLElement {
           border: 2px solid var(--color-borde);
         }
       </style>
+
       <header class="header-profile">
-      <div class="customer">
-        <div class="customer-text">
-          <h1>Hello, Welcome 👋</h1>
-          <p>Albert Stevano</p>
+        <div class="customer">
+          <div class="customer-text">
+            <h1>Hello, Welcome 👋</h1>
+            <p class="name">Cargando nombre...</p>
+          </div>
+          <div class="profile-picture">
+            <img src="/assets/profile.svg" alt="Profile picture of user" class="profile">
+          </div>
         </div>
-        <div class="profile-picture">
-          <img src="/assets/profile.svg" alt="Profile picture of Albert Stevano">
-        </div>
-      </div>
-    </header>
-      `;
+      </header>
+    `;
+
     this.shadowRoot.innerHTML = header_template;
   }
-  connectedCallback(){
+
+  connectedCallback() {
     const filtro = this.getAttribute("filtro");
-    fetch('http:/localhost:3000/header_element')
-    .then(res => res.json())
-    .then(data => {
-      const header_data = data[0];
-      if (header_data && header_data[filtro]) {
-        const [info] = header_data[filtro];
-        this.data = info;
-      } else {
-        this.shadowRoot.querySelector('.name').textContent = "nombre no encontrado"
-        this.shadowRoot.querySelector('.profile').textContent = "perfil no encontrado"
-      }
-    })
-  .catch (err => {
-    console.error("error al cargar los datos", err);
-    this.shadowRoot.querySelector('.name').textContent = "nombre no cargado"
-    this.shadowRoot.querySelector('.profile').textContent = "perfil no cargado"
-  });
+    fetch('http://localhost:3000/header_element')  // <- corregido
+      .then(res => res.json())
+      .then(data => {
+        const header_data = data[0];
+        if (header_data && header_data[filtro]) {
+          const [info] = header_data[filtro];
+          this.data = info;
+        } else {
+          this.shadowRoot.querySelector('.name').textContent = "Nombre no encontrado";
+          this.shadowRoot.querySelector('.profile').src = "/assets/default-profile.svg";
+        }
+      })
+      .catch(err => {
+        console.error("Error al cargar los datos:", err);
+        this.shadowRoot.querySelector('.name').textContent = "Error al cargar nombre";
+        this.shadowRoot.querySelector('.profile').src = "/assets/default-profile.svg";
+      });
   }
+
   set data(d) {
-    this.shadowRoot.querySelector('.name').textContent = d.name;
-    this.shadowRoot.querySelector('.profile').textContent = d.name;
+    this.shadowRoot.querySelector('.name').textContent = d.name || "Usuario";
+    this.shadowRoot.querySelector('.profile').src = d.image || "/assets/default-profile.svg";
   }
 }
-customElements.define("header-element-cart", header_element)
+
+customElements.define("header-element-cart", HeaderElement);
