@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <!-- importacion de scripts -->
-  <script src="./js/home.js"></script>
+  <script src="./js/home.js"></script> 
   <script src="./js/checkout.js"></script>
   <script src="./js/detail.js"></script>
   <script src="./js/search_bar.js"></script>
@@ -25,7 +25,7 @@
       <!-- TODO: revisar por que no se despliega la lista de opciones -->
       <div class="search-box">
         <div class="row">
-          <img src="assets/icon-search.svg" alt="icon search" class="search-icon" />
+          <img src="assets/icon-search.svg" alt="icon search" class="search-icon"/>
           <input 
             type="text" 
             class="search-bar" 
@@ -41,8 +41,33 @@
       </div>
     </div>
   </nav>
+  <nav>
+    <!-- TODO: rellenar esto con la parte que falta de la selleccion de categoiras -->
+  </nav>
   <main>
-
+    <cart-element filtro="1" onclick=""></cart-element>
+    <cart-element filtro="2"></cart-element>
+    <cart-element filtro="3"></cart-element>
+    <section class="product">
+      <div class="image-item">
+        <img src="./assets/product-1.png" alt="imagen de producto" class="product-image">
+        <img src="./assets/icon-heart.svg" alt="icono de corazon" class="heart-icon">
+      </div>
+      <div class="product-content">
+        <p class="product-title">Modern Light Clothes</p>
+        <p class="product-type">T-Shirt</p>
+        <div class="product-bottom">
+          <p class="product-price">$212.99</p>
+          <div class="product-rating">
+            <img src="./assets/icon-star.svg" alt="estrella">
+            <p>5.0</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer>
+
+  </footer>
 </body>
 </html>

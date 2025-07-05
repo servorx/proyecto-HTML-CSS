@@ -28,7 +28,7 @@ nav {
 .search-container {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .search-box {
@@ -142,85 +142,81 @@ nav {
 }
 
 /* apartado del main */
-main.product-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 1.5rem;
+main{
+  margin: 1rem;
 }
 
 .product {
-  border-radius: 1rem;
+  background-color: #fff;
   overflow: hidden;
-  box-shadow: 1px 5px 5px var(--color-sombra);
-  background-color: white;
-  transition: transform 0.3s ease;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+  width: 12rem; /* puedes ajustar según tu diseño */
+  font-family: 'Arial', sans-serif;
 }
 
-.product:hover {
-  transform: scale(1.01);
-}
-
-.imagen-product {
+/* Imagen con corazón encima */
+.image-item {
   position: relative;
 }
 
-.imagen-product .image {
+.product-image {
   width: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
+  height: auto;
   display: block;
+  border-radius: 1.3rem;
+  object-fit: cover;
 }
 
-.imagen-product .heart {
+.heart-icon {
   position: absolute;
-  top: 0.62rem;
-  right: 0.62rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  padding: 0.37rem;
-  background-color: var(--color-gris-oscuro);
-  border-radius: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: transform 0.2s;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
 }
 
-.imagen-product .heart:hover {
-  transform: scale(1.1);
+.product-content {
+  margin-top: 1rem;
 }
 
-.product div {
-  padding: 1rem;
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
-.product h2 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.3rem;
-}
-
-.product p {
-  margin: 0.3rem 0;
+.product-type {
   font-size: 0.9rem;
-  color: gray;
+  color: #A3A1A2;
+  margin: 0.5rem 0 1rem;
 }
 
-.product p:nth-child(3) {
-  font-weight: bold;
-  color: black;
-}
-
-.product p:last-child {
+.product-bottom {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
-  color: black;
+  justify-content: space-between;
 }
 
-.product p:last-child img {
-  width: 1rem;
-  height: 1rem;
+.product-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #121111;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1rem;
+  color: #000;
+  margin-right: 3rem;
+}
+
+.product-rating img {
+  width: 1.4rem;
+  height: 1.4em;
 }
 
 
@@ -285,7 +281,6 @@ footer {
 .item:hover::after{
     transform: scaleX(1);
 }
-
 
 .notification {
   position: absolute;
